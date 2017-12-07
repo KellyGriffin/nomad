@@ -11,7 +11,7 @@ data "aws_vpc" "default" {
 }
 
 resource "aws_security_group" "primary" {
-  name   = "hashistack"
+  name   = "hashistack-chris"
   vpc_id = "${data.aws_vpc.default.id}"
 
   ingress {
